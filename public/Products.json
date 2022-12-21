@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Electric planer Brandix",
+        "image": "https://stroyka.html.themeforest.scompiler.ru/themes/default-ltr/images/products/product-1.jpg",
+        "description": "Plane away chips, splinters and misshapen edges with the WEN 6 Amp 3-1/4 Inch Electric Hand Planer. Perfect for fixing stubborn doors and fitting wood. This power planer’s 6-Amp motor delivers over 34,000 cuts per minute to your workpiece, slicing away any irregularities until the surface of your boards are aligned and smooth and good product",
+        "price": "150",
+        "quantity": 250,
+        "minimumOrderQuantity":10
+    },
+    {
+        "name": "Chaff Cutter Machine",
+        "image": "https://stroyka.html.themeforest.scompiler.ru/themes/default-ltr/images/products/product-2.jpg",
+        "description": "A chaff cutter is a mechanical device for cutting straw or hay into small pieces before being mixed together with other forage and fed to horses and cattle. This aids the animal's digestion and prevents animals from rejecting any part of their food",
+        "price": "80",
+        "quantity": 130,
+        "minimumOrderQuantity":10
+    },
+    {
+        "name": "Drilling Machine",
+        "image": "https://stroyka.html.themeforest.scompiler.ru/themes/default-ltr/images/products/product-3.jpg",
+        "description": "drill press, also called Drilling Machine, device for producing holes in hard substances. The drill is held in a rotating spindle and is fed into the workpiece, which is usually clamped in a vise resting on a table.",
+        "price": "45",
+        "quantity": 500,
+        "minimumOrderQuantity":10
+    },
+    {
+        "name": "Drill Series 3 Brandix",
+        "image": "https://stroyka.html.themeforest.scompiler.ru/themes/default-ltr/images/products/product-4.jpg",
+        "description": "Drill Series 3 Brandix KSR4590PQS 1500 Watts.The spindle may be driven by an electric motor or by a pneumatic motor. It routs (hollows out) an area in hard material, such as wood or plastic. Routers are used most often in woodworking, especially cabinetry.",
+        "price": "30",
+        "quantity": 165,
+        "minimumOrderQuantity":10
+    },
+    {
+        "name": "Router Power Tool",
+        "image": "https://stroyka.html.themeforest.scompiler.ru/themes/default-ltr/images/products/product-5.jpg",
+        "description": "The router is a power tool with a flat base and a rotating blade extending past the base. The spindle may be driven by an electric motor or by a pneumatic motor. It routs (hollows out) an area in hard material, such as wood or plastic. Routers are used most often in woodworking, especially cabinetry.",
+        "price": "110",
+        "quantity": 365,
+        "minimumOrderQuantity":10
+    },
+    {
+        "name": "Drill Screwdriver Brandix",
+        "image": "https://stroyka.html.themeforest.scompiler.ru/themes/default-ltr/images/products/product-6.jpg",
+        "description": "drill press, also called Drilling Machine, device for producing holes in hard substances. The drill is held in a rotating spindle and is fed into the workpiece, which is usually clamped in a vise resting on a table.",
+        "price": "10",
+        "quantity": 700,
+        "minimumOrderQuantity":10
+    }
+]

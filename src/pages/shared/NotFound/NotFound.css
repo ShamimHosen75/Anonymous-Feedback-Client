@@ -1,0 +1,37 @@
+.notFound-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.notFound-wrapper{
+    margin-top:50px;
+    margin-bottom: 50px;
+    width:450px;
+    height:350px;
+    background-color: #ffd333;
+    color:#fff;
+    border-radius: 4px;
+}
+
+.notFound-wrapper h1{
+    margin-bottom: 1.5rem;
+    margin-top:1.75rem;
+    font-weight: 500;
+    font-size: 80px;
+}
+.notFound-wrapper h5{
+    margin-bottom: 1rem;
+    font-weight: 500;
+   font-size: 22px;
+}
+.notFound-wrapper button{
+    padding: 15px 25px;
+    border:none;
+    border-radius: 5px;
+    margin-top:8px;
+    font-weight: 700;
+    background-color: #31393f;
+    cursor:pointer;
+}
