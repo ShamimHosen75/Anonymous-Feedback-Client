@@ -11,7 +11,7 @@ const MakeAdmin = () => {
 
     useEffect(() => {
         setLoading(true);
-        fetch("https://damp-brushlands-62497.herokuapp.com/allUser", {
+        fetch("", {
             method: "GET",
             headers: {
                 "authorization": `Bearer ${localStorage.getItem("accessToken")}`
@@ -26,7 +26,7 @@ const MakeAdmin = () => {
     }, [userDeleteCount, adminCreate])
 
     const handleUserDelete = (id) => {
-        fetch(`https://damp-brushlands-62497.herokuapp.com/user/${id}`, {
+        fetch(``, {
             method: 'DELETE'
         })
             .then(res => res.json())
