@@ -34,7 +34,7 @@ const Review = () => {
           <h5 className="text-xl text-bold">{rev.name}</h5>
           <p>{rev.Address}</p>
          </div> */}
-         <p>{rev.description?.slice(0, 110)}</p>
+         <p className="inline font-medium">Review : {rev.description?.slice(0, 110)}</p>
         </div>
         
         <div>

@@ -58,23 +58,8 @@ const AddReview = () => {
         required
        />
       </div> */}
-      
      </div>
-     <div className="sm:flex justify-between mt-3">
-      {/* <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Image</span>
-                            </label>
-                            <input type="text" name='image' placeholder="Image URL" className="input input-bordered sm:w-56" required />
-                        </div> */}
-      {/* <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Ratings</span>
-                            </label>
-                            <input type="number" name='rating' max="5" min="1" placeholder="Rating 1 out of 5" className="input input-bordered sm:w-56" required />
-                        </div> */}
-     </div>
-
+     
      <div className="form-control mt-3">
       <label className="label">
        <h4 className="label-text text-lg font-bold">Add Review</h4>
@@ -85,6 +70,24 @@ const AddReview = () => {
        placeholder="Enter your feedback"
       ></textarea>
      </div>
+
+     <div className="sm:flex justify-between mt-3">
+      <div className="form-control">
+       <label className="label">
+        <span className="label-text text-lg font-bold">Ratings</span>
+       </label>
+       <input
+        type="number"
+        name="rating"
+        max="5"
+        min="1"
+        placeholder="Rating 1 out of 5"
+        className="input input-bordered sm:w-96"
+        required
+       />
+      </div>
+     </div>
+
      <div className="form-control mt-6">
       <input
        className="btn btn-secondary text-white"
