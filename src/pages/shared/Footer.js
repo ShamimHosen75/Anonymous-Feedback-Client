@@ -30,7 +30,7 @@ const Footer = () => {
                     </div>
                     <div className="sm:col-start-7 sm:col-end-9 mb-4 mb-lg-0">
                         <h6 className="uppercase font-medium mb-4">Company</h6>
-                        <ul className="list-unstyled mb-0 text-gray-900 font-semibold">
+                        <ul className="list-unstyled mb-0 text-gray-900 font semibold">
                             <li className="mb-2 ">Login</li>
                             <li className="mb-2 ">Register</li>
                             <li className="mb-2 ">Our Feedback</li>
@@ -42,7 +42,8 @@ const Footer = () => {
                         <p className='mb-4 text-gray-900'>Be the first to know about exciting our feedback.</p>
                         <form onSubmit={handleNewsLater}>
                             <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter Email" class="input w-60 max-w-xs text-gray-900 font-medium " />
-                            <input className='btn bg-black text-[#f3ec78] hover:bg-black hover:text-white  ml-2' type="submit" value="Submit" />
+                            <input className='btn bg-black text-[#f3ec78]  
+                             hover:bg-black hover:text-white  ml-2' type="submit" value="Submit" />
                         </form>
                     </div>
                 </div>
@@ -50,7 +51,8 @@ const Footer = () => {
 
             <div className="py-3">
                 <div className="container text-center">
-                    <p className="mb-0 py-2 text-secondary font-semibold">Copyright © {year} | App Coderz | All rights reserved.</p>
+                    <p className="mb-0 py-2 text-secondary font-semibold">Copyright 
+                      © {year} | App Coderz | All rights reserved.</p>
                 </div>
             </div>
         </footer>

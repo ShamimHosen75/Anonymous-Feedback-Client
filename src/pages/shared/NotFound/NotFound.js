@@ -9,9 +9,9 @@ const NotFound = () => {
     return (
         <>
             <div className='notFound-container'>
-                <div className='notFound-wrapper'>
+                <div className='notFound-wrapper text-primary'>
                     <h1>Opps!</h1>
-                    <h5>404-PAGE NOT FOUND</h5>
+                    <h4>404-PAGE NOT FOUND</h4>
                     <p>The page you are looking for might have been removed <br /> had its's name change or is temporarily unavailable.</p>
                     <button onClick={() => navigate("/home")}>GO TO HOMEPAGE</button>
                 </div>
