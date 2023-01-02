@@ -28,39 +28,12 @@ const AddReview = () => {
  };
 
  return (
-  <div className="ml-5 ">
-   <h2 className="text-3xl my-3 font-medium">Add a Review</h2>
-   <div className="sm:w-1/2 bg-gray-200 p-10 sm:p-5 rounded-md mr-5">
+  <div className="ml-5 text-center">
+   <h2 className="text-3xl my-7 font-medium">Add New Review</h2>
+   <div className="flex items-center justify-center">
+   <div className="sm:w-1/2 text-center items-center bg-gray-200 p-10 sm:p-5 rounded-md mr-5">
     <form onSubmit={handleReviewAdd}>
-     <div className="sm:flex justify-between">
-      {/* <div className="form-control">
-       <label className="label">
-        <span className="label-text">Name</span>
-       </label>
-       <input
-        type="text"
-        name="name"
-        placeholder="Name"
-        className="input input-bordered sm:w-56"
-        required
-       />
-      </div> */}
-
-      {/* <div className="form-control">
-       <label className="label">
-        <span className="label-text">Address</span>
-       </label>
-       <input
-        type="text"
-        name="address"
-        placeholder="address"
-        className="input input-bordered sm:w-56"
-        required
-       />
-      </div> */}
-     </div>
-     
-     <div className="form-control mt-3">
+     <div className=" justify-center form-control mt-3">
       <label className="label">
        <h4 className="label-text text-lg font-bold">Add Review</h4>
       </label>
@@ -70,24 +43,7 @@ const AddReview = () => {
        placeholder="Enter your feedback"
       ></textarea>
      </div>
-
-     <div className="sm:flex justify-between mt-3">
-      <div className="form-control">
-       <label className="label">
-        <span className="label-text text-lg font-bold">Ratings</span>
-       </label>
-       <input
-        type="number"
-        name="rating"
-        max="5"
-        min="1"
-        placeholder="Rating 1 out of 5"
-        className="input input-bordered sm:w-96"
-        required
-       />
-      </div>
-     </div>
-
+     
      <div className="form-control mt-6">
       <input
        className="btn btn-secondary text-white"
@@ -96,6 +52,7 @@ const AddReview = () => {
       />
      </div>
     </form>
+   </div>
    </div>
   </div>
  );

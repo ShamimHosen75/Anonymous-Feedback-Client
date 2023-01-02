@@ -34,24 +34,9 @@ const Review = () => {
           <h5 className="text-xl text-bold">{rev.name}</h5>
           <p>{rev.Address}</p>
          </div> */}
-         <p className="inline font-medium">Review : {rev.description?.slice(0, 110)}</p>
+         <p className="inline font-medium">Review :{rev.description?.slice(0, 110)}</p>
         </div>
         
-        <div>
-         <p className="inline font-medium">Ratings : </p>
-         <div className="rating rating-sm inline">
-          {[...Array(5)].map((rat, ind) => (
-           <input
-            key={ind}
-            type="radio"
-            name="rating-2"
-            className={`mask mask-star-2 ${
-             rev.rating >= ind + 1 ? "bg-orange-600" : "bg-orange-300"
-            }`}
-           />
-          ))}
-         </div>
-        </div>
        </div>
       </div>
      ))}
