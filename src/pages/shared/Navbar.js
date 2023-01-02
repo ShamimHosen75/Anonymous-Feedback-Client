@@ -53,25 +53,26 @@ const Navbar = () => {
      </label>
      <ul
       tabIndex="0"
-      className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 text-black rounded-box w-52 font-medium"
+      className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 
+       text-black rounded-box w-52 font-medium"
      >
       {menuItem}
       {user ? (
        <button
         onClick={handleLogOut}
-        className="btn btn-secondary text-white border-0"
+        className="btn btn-primary text-white border-0"
        >
         Sign Out
        </button>
       ) : (
-       <Link to="/login" className="btn btn-secondary text-white border-0">
+       <Link to="/login" className="btn btn-primary text-white border-0">
         Login
        </Link>
       )}
      </ul>
     </div>
     <a className="btn btn-ghost normal-case text-2xl font-bold px-0">
-     Anonymous Feedback
+     Technym
     </a>
    </div>
    <div className="navbar-center hidden lg:flex">
@@ -83,12 +84,14 @@ const Navbar = () => {
     {user ? (
      <button
       onClick={handleLogOut}
-      className="btn btn-secondary text-white border-0"
+      className="btn btn-secondary text-primary 
+      hover:bg-black hover:text-white border-0"
      >
       Sign Out
      </button>
     ) : (
-     <Link to="/login" className="btn btn-secondary text-white border-0">
+     <Link to="/login" className="btn btn-secondary text-primary 
+     hover:bg-black hover:text-white border-0">
       Login
      </Link>
     )}

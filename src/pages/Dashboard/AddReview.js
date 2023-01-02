@@ -4,10 +4,8 @@ import { toast } from "react-toastify";
 const AddReview = () => {
  const handleReviewAdd = (e) => {
   e.preventDefault();
-  const name = e.target.name.value;
-  const Address = e.target.address.value;
-  const description = e.target.description.value;
-  const newReview = { name, Address, description };
+  const feedback = e.target.feedback.value;
+  const newReview = { feedback };
 
   fetch("http://localhost:5000/reviews", {
    method: "POST",
@@ -19,17 +17,17 @@ const AddReview = () => {
    .then((res) => res.json())
    .then((data) => {
     if (data.success) {
-     toast.success(`${name} Review Added`);
+     toast.success(` Review Added`);
      e.target.reset();
     } else {
-     toast.error(`${name} Please again fill the form`);
+     toast.error(`Please again fill the form`);
     }
    });
  };
 
  return (
   <div className="ml-5 text-center">
-   <h2 className="text-3xl my-7 font-medium">Add New Review</h2>
+   <h2 className="text-3xl text-primary my-7 font-medium">Add New Review</h2>
    <div className="flex items-center justify-center">
    <div className="sm:w-1/2 text-center items-center bg-gray-200 p-10 sm:p-5 rounded-md mr-5">
     <form onSubmit={handleReviewAdd}>
@@ -38,7 +36,7 @@ const AddReview = () => {
        <h4 className="label-text text-lg font-bold">Add Review</h4>
       </label>
       <textarea
-       name="description"
+       name="feedback"
        className="textarea"
        placeholder="Enter your feedback"
       ></textarea>
@@ -46,7 +44,7 @@ const AddReview = () => {
      
      <div className="form-control mt-6">
       <input
-       className="btn btn-secondary text-white"
+       className="btn btn-primary text-white"
        type="submit"
        value="Submit"
       />

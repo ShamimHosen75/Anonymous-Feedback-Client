@@ -19,7 +19,7 @@ const Review = () => {
   <Loading loadingStatus="true"></Loading>
  ) : (
   <div className="mx-4 sm:mx-10 mb-24">
-   <h2 className="text-4xl text-center font-bold text-gray-900 mb-14">
+   <h2 className="text-4xl text-center font-bold text-primary mb-14">
     Customers Feedback
    </h2>
    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -28,13 +28,14 @@ const Review = () => {
      .reverse()
      .map((rev) => (
       <div key={rev._id} className="card bg-base-100 shadow-xl">
-       <div className="card-body text-secondary">
+       <div className="card-body text-primary">
         <div className="flex mt-6">
          {/* <div className="ml-4">
           <h5 className="text-xl text-bold">{rev.name}</h5>
           <p>{rev.Address}</p>
          </div> */}
-         <p className="inline font-medium">Review :{rev.description?.slice(0, 110)}</p>
+         <p className="inline font-medium text-black">Review : 
+          {rev.feedback?.slice(0, 200)}</p>
         </div>
         
        </div>
