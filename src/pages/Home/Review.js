@@ -19,7 +19,7 @@ const Review = () => {
   <Loading loadingStatus="true"></Loading>
  ) : (
   <div className="mx-4 sm:mx-10 mb-24">
-   <h2 className="text-4xl text-center font-bold text-primary mb-14">
+   <h2 className="text-4xl text-center font-bold text-primary mb-14 mt-10">
     Customers Feedback
    </h2>
    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -34,7 +34,8 @@ const Review = () => {
           <h5 className="text-xl text-bold">{rev.name}</h5>
           <p>{rev.Address}</p>
          </div> */}
-         <p className="inline font-medium text-black">Review : 
+         <p className="inline text-md font-semibold text-black">
+          <span className="text-xl font-bold">Review : </span>  
           {rev.feedback?.slice(0, 200)}</p>
         </div>
         

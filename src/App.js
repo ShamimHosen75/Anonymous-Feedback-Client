@@ -5,7 +5,7 @@ import './App.css';
 import Blog from './pages/Blog/Blog';
 import AddReview from './pages/Dashboard/AddReview';
 import Dashboard from './pages/Dashboard/Dashboard';
-import MakeAdmin from './pages/Dashboard/MakeAdmin';
+import User from './pages/Dashboard/User';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import RequireAdmin from './pages/Login/RequireAdmin';
@@ -22,8 +22,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} >
-          
-          <Route path='makeAdmin' element={<RequireAdmin><MakeAdmin></MakeAdmin> 
+          {/* <Route path='user' element={<User></User>}></Route> */}
+          <Route path='user' element={<RequireAdmin><User></User> 
             </RequireAdmin>}></Route>
         </Route>
         <Route path='addReview' element={<AddReview></AddReview>}></Route>

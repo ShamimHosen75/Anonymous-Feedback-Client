@@ -1,4 +1,5 @@
 import React from 'react';
+import RequireAdmin from '../Login/RequireAdmin';
 import Footer from "../shared/Footer";
 import Banner from './Banner';
 import Review from './Review';
@@ -8,7 +9,7 @@ const Home = () => {
         <>
             <div className='px-4 sm:px-12'>
                 <Banner></Banner>
-                <Review></Review>
+                <RequireAdmin><Review></Review></RequireAdmin>
             </div>
             <Footer></Footer>
         </>
