@@ -20,7 +20,7 @@ const Review = () => {
  ) : (
   <div className="mx-4 sm:mx-10 mb-24">
    <h2 className="text-4xl text-center font-bold text-primary mb-14 mt-10">
-    Customers Feedback
+    All Feedback
    </h2>
    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
     {reviews

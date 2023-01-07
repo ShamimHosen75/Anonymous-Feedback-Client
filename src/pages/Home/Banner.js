@@ -14,7 +14,7 @@ const Banner = () => {
       Integrations keep feedback on track
      </h1>
      <p className="py-6 text-gray-600 font-semibold mr-5">
-      Technym feedback by AppCoderz. New feature request? <br />
+      Anonymous feedback by AppCoderz. New feature request? <br />
       Ping the product team automatically. It's easy to build a workflow
       <br /> that works for you.
      </p>
