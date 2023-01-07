@@ -2,7 +2,6 @@ import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
-import Blog from './pages/Blog/Blog';
 import AddReview from './pages/Dashboard/AddReview';
 import Dashboard from './pages/Dashboard/Dashboard';
 import User from './pages/Dashboard/User';
@@ -27,7 +26,6 @@ function App() {
             </RequireAdmin>}></Route>
         </Route>
         <Route path='addReview' element={<AddReview></AddReview>}></Route>
-        <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/login" element={<Login />} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="*" element={<NotFound></NotFound>}></Route>
