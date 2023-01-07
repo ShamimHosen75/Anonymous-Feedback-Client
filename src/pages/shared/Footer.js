@@ -15,7 +15,7 @@ const Footer = () => {
    <div className="container py-5">
     <div className="grid sm:grid-cols-12 gap-10 py-4">
      <div className="sm:col-start-1 sm:col-end-5 mb-4 mb-lg-0">
-      <h3 className="text-3xl font-semibold mb-4">App Coderz Feedback</h3>
+      <h3 className="text-3xl font-semibold mb-4">App Coderz</h3>
       <p className="font-italic text-[#bcbcb6] font-semibold">
       App Coderz is with it's user-friendly interface, we've seen
        responses to surveys and feedback improve drastically?
