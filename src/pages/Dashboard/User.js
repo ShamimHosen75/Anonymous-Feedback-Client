@@ -55,7 +55,7 @@ const Users = () => {
 
  return (
   <div>
-   <h2 className="text-3xl mt-6 font-bold">All Users</h2>
+   <h2 className="text-3xl mt-6 font-bold py-5">All Users</h2>
    <div className="overflow-x-auto">
    <table className="table w-full text-center">
      <thead>
