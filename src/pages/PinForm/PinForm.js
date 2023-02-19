@@ -30,18 +30,23 @@ function PinForm(props) {
 
   return (
     <div className="card-body py-5">
-      <h4 className="text-3xl text-black text-center font-bold">Pin Code Form</h4>
-       <form onSubmit={handleSubmit}>
-       <label>
-         Enter your 4 digit pin:
-        <input type="text" value={pin} onChange={(e) => setPin(e.target.value)} />
+      <h4 className="text-2xl text-black text-center font-bold">Pin Code Form</h4>
+       <form className='text-center' onSubmit={handleSubmit}>
+       <label htmlFor="email" className="label text-center justify-center">
+       <span className="label-text text-xl font-semibold">PIN CODE</span>
        </label>
+       <input 
+        className="input input-bordered w-60 border-gray-400" 
+        type="text" 
+        placeholder="Enter Your Pin Code"
+        value={pin} 
+        onChange={(e) => setPin(e.target.value)} />
        {error && <div className="error">{error}</div>}
-       <div className="form-control mt-5">
+       <div className="form-control mt-5 justify-center items-center">
          <input
           type="submit"
           value="Submit"
-          className="btn btn-primary text-white w-32  font-bold border-0"
+          className="btn btn-primary text-white w-32 font-bold border-0"
          ></input>
         </div>
      </form>

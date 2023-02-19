@@ -60,7 +60,7 @@ const Users = () => {
    <table className="table w-full text-center">
      <thead>
       <tr>
-       <th>#</th>
+       <th>No</th>
        <th>Email</th>
        <th>admin list</th>
        <th>Action</th>
