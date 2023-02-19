@@ -21,9 +21,6 @@ const Dashboard = () => {
     <label htmlFor="sidebar-open" className="drawer-overlay"></label>
     <ul className="menu py-4 pl-4 pr-10 overflow-y-auto w-54 mr-3 bg-sky-900
      text-white">
-     <li>
-      <Link to="/dashboard">My Profile</Link>
-     </li>
      {admin === true ? (
       ""
      ) : (
