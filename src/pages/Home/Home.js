@@ -4,12 +4,14 @@ import PinForm from '../PinForm/PinForm';
 import Footer from "../shared/Footer";
 import Banner from './Banner';
 import Review from './Review';
+import UserFeedback from './UserFeedback';
 
 const Home = () => {
     return (
         <>
             <div className='px-4 sm:px-12'>
                 <Banner></Banner>
+                <UserFeedback></UserFeedback>
                 <PinForm></PinForm>
                 <RequireAdmin><Review></Review></RequireAdmin>
             </div>
