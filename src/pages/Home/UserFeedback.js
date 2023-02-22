@@ -1,5 +1,4 @@
 import React from 'react';
-import PinFormModal from './PinFormModal';
 
 const UserFeedback = () => {
   return (
@@ -8,7 +7,6 @@ const UserFeedback = () => {
       <label 
       htmlFor="pin-form-modal"
       onClick={()=>{
-        <PinFormModal></PinFormModal>
       }}
       className="btn btn-primary px-10 border-0 text-lg font-bold text-secondary 
       hover:bg-black hover:text-white">Yes</label>

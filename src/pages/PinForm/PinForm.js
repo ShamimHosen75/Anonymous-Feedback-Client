@@ -31,7 +31,6 @@ function PinForm(props) {
 
   return (
     <div className="card-body py-5">
-      <h4 className="text-2xl text-black text-center font-bold">Pin Code Form</h4>
        <form className='text-center' onSubmit={handleSubmit}>
        <label htmlFor="email" className="label text-center justify-center">
        <span className="label-text text-xl font-semibold">PIN CODE</span>

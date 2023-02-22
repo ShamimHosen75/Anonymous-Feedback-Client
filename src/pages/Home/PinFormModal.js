@@ -1,26 +1,61 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-const PinFormModal = () => {
+const PinFormModal = (props) => {
+  const [pin, setPin] = useState('');
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    // code to show pop-up form on website visit
+  }, []);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  
+    fetch('/api/check-pin', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ pin })
+    })
+      .then((response) => {
+        if (response.ok) {
+         // redirect to review page on success
+        } else {
+          setError('Invalid pin code');
+        }
+      })
+      .catch((error) => {
+        setError('Error occurred while checking pin code');
+      });
+  };
+
  return (
     <div>
      <input type="checkbox" id="pin-form-modal" className="modal-toggle" />
-        <div className="modal modal-bottom sm:modal-middle">
-          <div className="modal-box relative">
-          <label htmlFor="pin-from-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-            <h3 className="font-bold text-lg">
-            Congratulations random Internet user!
-            </h3>
-             <p className="py-4">
-              You've been selected for a chance to get one year of subscription to use
-              Wikipedia for free!
-             </p>
-             <div className="modal-action">
-              <label htmlFor="pin-form-modal" className="btn">
-               Yay!
-              </label>
-             </div>
-          </div>
+      <div className="modal">
+       <div className="modal-box relative">
+       <label htmlFor="pin-form-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+        <form className='text-center' onSubmit={handleSubmit}>
+         <label htmlFor="email" className="label text-center justify-center">
+           <span className="label-text text-xl font-semibold">PIN CODE</span>
+         </label>
+
+       <input 
+         className="input input-bordered w-60 border-gray-400" 
+         type="text" 
+         placeholder="Enter Your Pin Code"
+         value={pin} 
+         onChange={(e) => setPin(e.target.value)} />
+         {error && <div className="error">{error}</div>}
+       <div className="modal-action form-control mt-5 justify-center items-center">
+         <label
+          type="submit"
+          value="Submit"
+          htmlFor="pin-form-modal"
+          className="btn btn-primary text-white w-32 font-bold border-0">Submit</label>
         </div>
+       </form>
+      </div>
+      </div>
     </div>
  );
 };
