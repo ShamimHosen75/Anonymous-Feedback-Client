@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import PinFormModal from '../Home/PinFormModal';
 
 function PinForm(props) {
   const [pin, setPin] = useState('');
@@ -50,6 +51,7 @@ function PinForm(props) {
          ></input>
         </div>
      </form>
+     <PinFormModal></PinFormModal>
     </div>
   );
 }

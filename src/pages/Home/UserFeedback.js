@@ -6,7 +6,7 @@ const UserFeedback = () => {
     <div className='text-center justify-center py-5'>
       <h2 className='text-3xl font-bold items-center py-5'>Do You Want to FeedBack?</h2>
       <label 
-      htmlFor="pin-from-modal"
+      htmlFor="pin-form-modal"
       onClick={()=>{
         <PinFormModal></PinFormModal>
       }}

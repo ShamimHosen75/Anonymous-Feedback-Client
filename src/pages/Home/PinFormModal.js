@@ -3,7 +3,7 @@ import React from "react";
 const PinFormModal = () => {
  return (
     <div>
-     <input type="checkbox" id="pin-from-modal" className="modal-toggle" />
+     <input type="checkbox" id="pin-form-modal" className="modal-toggle" />
         <div className="modal modal-bottom sm:modal-middle">
           <div className="modal-box relative">
           <label htmlFor="pin-from-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
@@ -15,7 +15,7 @@ const PinFormModal = () => {
               Wikipedia for free!
              </p>
              <div className="modal-action">
-              <label htmlFor="pin-from-modal" className="btn">
+              <label htmlFor="pin-form-modal" className="btn">
                Yay!
               </label>
              </div>
