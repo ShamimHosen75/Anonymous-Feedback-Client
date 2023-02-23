@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 
-const PinFormModal = (props) => {
+const PinFormModal = () => {
   const [pin, setPin] = useState('');
   const [error, setError] = useState('');
+  // let location = useLocation();
+
 
   useEffect(() => {
     // code to show pop-up form on website visit
@@ -19,6 +21,9 @@ const PinFormModal = (props) => {
       .then((response) => {
         if (response.ok) {
          // redirect to review page on success
+        //  if (!pin) {
+        //   return <Navigate to="/addReview" state={{ from: location }} replace />;
+        // }
         } else {
           setError('Invalid pin code');
         }
@@ -35,13 +40,13 @@ const PinFormModal = (props) => {
        <div className="modal-box relative">
        <label htmlFor="pin-form-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
         <form className='text-center' onSubmit={handleSubmit}>
-         <label htmlFor="email" className="label text-center justify-center">
+         <label htmlFor="password" className="label text-center justify-center">
            <span className="label-text text-xl font-semibold">PIN CODE</span>
          </label>
 
        <input 
          className="input input-bordered w-60 border-gray-400" 
-         type="text" 
+         type="password" 
          placeholder="Enter Your Pin Code"
          value={pin} 
          onChange={(e) => setPin(e.target.value)} />

@@ -1,4 +1,5 @@
 import React from 'react';
+import PinFormModal from './PinFormModal';
 
 const UserFeedback = () => {
   return (
@@ -10,6 +11,7 @@ const UserFeedback = () => {
       }}
       className="btn btn-primary px-10 border-0 text-lg font-bold text-secondary 
       hover:bg-black hover:text-white">Yes</label>
+      <PinFormModal></PinFormModal>
     </div>
   );
 };
