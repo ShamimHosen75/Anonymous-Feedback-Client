@@ -1,34 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const PinFormModal = () => {
   const [pin, setPin] = useState('');
-  const [error, setError] = useState('');
-  // let location = useLocation();
+  const adminPin = '1234';
 
 
-  useEffect(() => {
-    // code to show pop-up form on website visit
-  }, []);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  
-    fetch('/http://localhost:5000//password', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ pin })
-    })
-      .then((response) => {
-        if (response.ok) {
-         // redirect to review page on success
-        } else {
-          setError('Invalid pin code');
-        }
-      })
-      .catch((error) => {
-        setError('Error occurred while checking pin code');
-      });
+  const handlePinChange = (event) => {
+    setPin(event.target.value);
   };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  
+    if(pin === adminPin){
+      toast.success(`Successfully!`);
+      return true;
+    } else{
+      toast.error(`Incorrect PIN, please try again.`);
+      setPin('');
+    }
+  }
 
  return (
     <div>
@@ -46,14 +38,13 @@ const PinFormModal = () => {
          type="password" 
          placeholder="Enter Your Pin Code"
          value={pin} 
-         onChange={(e) => setPin(e.target.value)} />
-         {error && <div className="error">{error}</div>}
+         onChange={handlePinChange} />
        <div className="modal-action form-control mt-5 justify-center items-center">
-         <label
+         <button
           type="submit"
           value="Submit"
           htmlFor="pin-form-modal"
-          className="btn btn-primary text-white w-32 font-bold border-0">Submit</label>
+          className="btn btn-primary text-white w-32 font-bold border-0">Submit</button>
         </div>
        </form>
       </div>
