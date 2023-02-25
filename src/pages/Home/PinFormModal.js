@@ -13,7 +13,7 @@ const PinFormModal = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   
-    fetch('/api/check-pin', {
+    fetch('/http://localhost:5000//password', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ pin })
@@ -21,9 +21,6 @@ const PinFormModal = () => {
       .then((response) => {
         if (response.ok) {
          // redirect to review page on success
-        //  if (!pin) {
-        //   return <Navigate to="/addReview" state={{ from: location }} replace />;
-        // }
         } else {
           setError('Invalid pin code');
         }
