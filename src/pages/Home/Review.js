@@ -35,7 +35,7 @@ const Review = () => {
           <p>{rev.Address}</p>
          </div> */}
          <p className="inline text-md font-semibold text-black">
-          <span className="text-xl font-bold">Review : </span>  
+          <span className="text-xl font-bold">Feedback : </span>  
           {rev.feedback?.slice(0, 200)}</p>
         </div>
         

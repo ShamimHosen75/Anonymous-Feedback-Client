@@ -13,7 +13,7 @@ const Loading = (loadingStatus) => {
     return (
         <div className='loading h-screen flex justify-center items-center'>
             <div className="flex text-center items-center justify-center">
-            <FadeLoader color={"#02409c"} loading={loadingStatus} css={override} size={20} />
+            <FadeLoader color={"#0659d7"} loading={loadingStatus} css={override} size={20} />
             </div>
         </div>
     );

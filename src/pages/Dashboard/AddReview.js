@@ -27,18 +27,18 @@ const AddReview = () => {
 
  return (
   <div className="ml-5 text-center">
-   <h2 className="text-3xl text-primary my-7 font-medium">Add New Review</h2>
+   <h2 className="text-3xl text-primary my-7 font-medium">Add New Feedback</h2>
    <div className="flex items-center justify-center">
    <div className="sm:w-1/2 text-center items-center bg-gray-200 p-10 sm:p-5 rounded-md mr-5">
     <form onSubmit={handleReviewAdd}>
      <div className=" justify-center form-control mt-3">
       <label className="label">
-       <h4 className="label-text text-lg font-bold">Add Review</h4>
+       <h4 className="label-text text-lg font-bold">Feedback</h4>
       </label>
       <textarea
        name="feedback"
        className="textarea"
-       placeholder="Enter your feedback"
+       placeholder="Enter your feedback..."
       ></textarea>
      </div>
      
