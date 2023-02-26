@@ -24,7 +24,6 @@ const PinFormModal = () => {
     }
   };
 
-
  return (
     <div>
      <input type="checkbox" id="pin-form-modal" className="modal-toggle" />
