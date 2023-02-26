@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import { toast } from "react-toastify";
 
 const PinFormModal = () => {
   const [pin, setPin] = useState('');
+  const navigate = useNavigate();
   const adminPin = '1234';
 
 
@@ -15,12 +17,13 @@ const PinFormModal = () => {
   
     if(pin === adminPin){
       toast.success(`Successfully!`);
-      return true;
+      navigate("/addReview");
     } else{
       toast.error(`Incorrect PIN, please try again.`);
       setPin('');
     }
-  }
+  };
+
 
  return (
     <div>
