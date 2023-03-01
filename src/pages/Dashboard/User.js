@@ -9,7 +9,7 @@ const Users = () => {
  
   useEffect(() => {
    setLoading(true);
-   fetch("http://localhost:5000/user", {
+   fetch("https://anonymous-feedback-server.vercel.app/user", {
     method: "GET",
     headers: {
      authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -23,7 +23,7 @@ const Users = () => {
   }, [userDeleteCount, adminCreate]);
  
   const handleUserDelete = (id) => {
-   fetch(`http://localhost:5000/user${id}`, {
+   fetch(`https://anonymous-feedback-server.vercel.app/user${id}`, {
     method: "DELETE",
    })
     .then((res) => res.json())
@@ -35,7 +35,7 @@ const Users = () => {
   };
  
   const handleUserAdmin = (email) => {
-   fetch(`http://localhost:5000/user/admin/${email}`, {
+   fetch(`https://anonymous-feedback-server.vercel.app/user/admin/${email}`, {
     method: "PUT",
     headers: {
      "Content-Type": "application/json",

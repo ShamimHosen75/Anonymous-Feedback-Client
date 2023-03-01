@@ -1,5 +1,8 @@
 {
- "projects": {
-  "default": "anonymous-feedback"
- }
+  "projects": {
+    "default": "anonymous-feedback-288d2",
+    "staging": "anonymous-feedback-288d2"
+  },
+  "targets": {},
+  "etags": {}
 }

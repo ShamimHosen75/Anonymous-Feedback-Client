@@ -8,7 +8,7 @@ const useAdmin = (user) => {
 
     useEffect(() => {
         if (email) {
-            fetch(`http://localhost:5000/admin/${email}`, {
+            fetch(`https://anonymous-feedback-server.vercel.app/admin/${email}`, {
                 method: "GET",
                 headers: {
                     "content-type": "application/json",
