@@ -8,7 +8,7 @@ const useToken = (user) => {
         const email = user?.user?.email;
         const currentUser = {email:email}
         if (email) {
-            fetch(`https://anonymous-feedback-server.vercel.app/user/${email}`,{
+            fetch(`https://anonymous-feedback-system.vercel.app/user/${email}`,{
                 method:"PUT",
                 headers:{
                     "content-type":"application/json"

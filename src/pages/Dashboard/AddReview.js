@@ -7,7 +7,7 @@ const AddReview = () => {
   const feedback = e.target.feedback.value;
   const newReview = { feedback };
 
-  fetch("https://anonymous-feedback-server.vercel.app/reviews", {
+  fetch("https://anonymous-feedback-system.vercel.app/reviews", {
    method: "POST",
    headers: {
     "Content-Type": "application/json",

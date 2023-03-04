@@ -7,7 +7,7 @@ const Review = () => {
 
  useEffect(() => {
   setLoading(true);
-  fetch("https://anonymous-feedback-server.vercel.app/reviews")
+  fetch("https://anonymous-feedback-system.vercel.app/reviews")
    .then((res) => res.json())
    .then((data) => {
     setReviews(data);
