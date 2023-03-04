@@ -7,10 +7,9 @@ const AddReview = () => {
   const feedback = e.target.feedback.value;
   const newReview = { feedback };
 
-  if(newReview !== ""){
-    fetch("https://anonymous-feedback-system.vercel.app/reviews", {
-    method: "POST",
-    headers: {
+  fetch("https://anonymous-feedback-system.vercel.app/reviews", {
+   method: "POST",
+   headers: {
     "Content-Type": "application/json",
    },
    body: JSON.stringify(newReview),
@@ -24,8 +23,6 @@ const AddReview = () => {
      toast.error(`Please again fill the form`);
     }
    });
-  }
-  
  };
 
  return (
@@ -42,6 +39,7 @@ const AddReview = () => {
        name="feedback"
        className="textarea"
        placeholder="Enter your feedback..."
+       required
       ></textarea>
      </div>
      
