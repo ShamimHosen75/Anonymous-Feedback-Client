@@ -4,7 +4,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
 
-const Navbar = ({ isAuthenticated }) => {
+const Navbar = () => {
  const [user] = useAuthState(auth);
 
  const handleLogOut = () => {
@@ -23,7 +23,7 @@ const Navbar = ({ isAuthenticated }) => {
     </li>
    )}
    <li>
-   {isAuthenticated && <li><Link to="/addReview">Add Review</Link></li>}
+    {/* <Link to="/addReview">Add Review</Link> */}
    </li>
   </>
  );
