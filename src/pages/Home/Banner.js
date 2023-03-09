@@ -18,13 +18,12 @@ const Banner = () => {
       Ping the product team automatically. It's easy to build a workflow
       <br /> that works for you.
      </p>
-     <button
-      type="button"
-      className="btn btn-primary px-8 border-0 font-bold text-secondary 
-      hover:bg-black hover:text-white"
-     >
-      Give feedback
-     </button>
+     <label 
+      htmlFor="pin-form-modal"
+      onClick={()=>{
+      }}
+      className="btn btn-primary px-8 border-0 text-lg font-bold text-secondary 
+      hover:bg-black hover:text-white">Give feedback</label>
     </div>
    </div>
   </div>

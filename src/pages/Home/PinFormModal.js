@@ -40,7 +40,9 @@ const PinFormModal = () => {
          type="password" 
          placeholder="Enter Your Pin Code"
          value={pin} 
-         onChange={handlePinChange} />
+         onChange={handlePinChange} 
+         required
+         />
        <div className="modal-action form-control mt-5 justify-center items-center">
          <button
           type="submit"

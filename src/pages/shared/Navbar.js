@@ -15,7 +15,7 @@ const Navbar = () => {
  const menuItem = (
   <>
    <li>
-    {/* <Link to="/home">Home</Link> */}
+    <Link to="/home">Home</Link>
    </li>
    {user && (
     <li>
