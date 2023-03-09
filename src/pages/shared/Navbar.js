@@ -15,7 +15,7 @@ const Navbar = () => {
  const menuItem = (
   <>
    <li>
-    <Link to="/home">Home</Link>
+    {/* <Link to="/home">Home</Link> */}
    </li>
    {user && (
     <li>
@@ -23,7 +23,7 @@ const Navbar = () => {
     </li>
    )}
    <li>
-    <Link to="/addReview">Add Review</Link>
+    {/* <Link to="/addReview">Add Review</Link> */}
    </li>
   </>
  );
