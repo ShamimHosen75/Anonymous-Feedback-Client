@@ -17,6 +17,7 @@ const PinFormModal = () => {
   
     if(pin === adminPin){
       toast.success(`Successfully!`);
+      // setAuthenticated(true);
       navigate("/addReview");
     } else{
       toast.error(`Incorrect PIN, please try again.`);

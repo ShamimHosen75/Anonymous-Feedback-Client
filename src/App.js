@@ -14,6 +14,7 @@ import Navbar from './pages/shared/Navbar';
 import NotFound from './pages/shared/NotFound/NotFound';
 
 function App() {
+
   return (
     <div>
       <Navbar></Navbar>
