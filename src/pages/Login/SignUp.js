@@ -29,7 +29,7 @@ const SignUp = () => {
 
  useEffect(() => {
   if (token) {
-   navigate("/home");
+     navigate("/home");
   }
  }, [navigate, token]);
 
