@@ -30,6 +30,7 @@ const Users = () => {
     .then((data) => {
      if (data.acknowledged) {
       setUserDeleteCount(userDeleteCount + 1);
+      toast.success("Remove user");
      }
     });
   };
@@ -85,8 +86,8 @@ const Users = () => {
         </td>
         <td>
          <button
-          className="btn btn-error btn-sm mr-2"
           onClick={() => handleUserDelete(singleUser._id)}
+          className="btn btn-error btn-sm mr-2"
          >
           Remove user
          </button>

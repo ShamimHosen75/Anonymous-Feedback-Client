@@ -38,9 +38,7 @@ const Login = () => {
  }, [from, navigate, token]);
 
  if (googleError || error) {
-  errorElement = (
-   <p className="w-60 text-red-500">{error.message || googleError.message}</p>
-  );
+  errorElement = <p className="w-60 text-red-500">{error.message || googleError.message}</p>
  }
 
  const onSubmit = (data) => {
@@ -60,7 +58,7 @@ const Login = () => {
       className="card flex-shrink-0 w-full max-w-sm bg-base-100"
      >
       <div className="card-body py-5">
-       <h4 className="text-3xl text-center text-secondary font-bold">Login</h4>
+       <h4 className="text-3xl text-center text-primary font-bold">Login</h4>
        <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-control">
          <label htmlFor="email" className="label">

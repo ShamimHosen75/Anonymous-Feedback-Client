@@ -34,11 +34,9 @@ const SignUp = () => {
  }, [navigate, token]);
 
  if (googleError || error || updateError) {
-  errorElement = (
-   <p className="w-60 text-red-500">
+  errorElement = <p className="w-60 text-red-500">
     {error.message || googleError.message}|| updateError.message
    </p>
-  );
  }
 
  if (googleLoading || loading || updating) {
@@ -59,8 +57,8 @@ const SignUp = () => {
       className="card flex-shrink-0 w-full max-w-sm bg-base-100"
      >
       <div className="card-body py-4">
-       <h4 className="text-3xl text-center text-secondary font-bold">
-        Register
+       <h4 className="text-3xl text-center text-primary font-bold">
+        Sign UP
        </h4>
        <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-control">
