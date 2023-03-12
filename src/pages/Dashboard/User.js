@@ -22,8 +22,8 @@ const Users = () => {
     });
   }, [userDeleteCount, adminCreate]);
  
-  const handleUserDelete = (id) => {
-   fetch(`https://anonymous-feedback-system.vercel.app/user${id}`, {
+  const handleUserDelete = (email) => {
+   fetch(`https://anonymous-feedback-system.vercel.app/user${email}`, {
     method: "DELETE",
    })
     .then((res) => res.json())
@@ -69,7 +69,7 @@ const Users = () => {
      </thead>
      <tbody>
       {users.map((singleUser, index) => (
-       <tr key={singleUser._id}>
+       <tr key={singleUser.email}>
         <th>{index + 1}</th>
         <td>{singleUser.email}</td>
         <td>
@@ -86,7 +86,7 @@ const Users = () => {
         </td>
         <td>
          <button
-          onClick={() => handleUserDelete(singleUser._id)}
+          onClick={() => handleUserDelete(singleUser.email)}
           className="btn btn-error btn-sm mr-2"
          >
           Remove user
