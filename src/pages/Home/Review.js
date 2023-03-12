@@ -24,8 +24,8 @@ const Review = () => {
    </h2>
    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
     {reviews
-     .slice(-6)
-     .reverse()
+    //  .slice(-6)
+    //  .reverse()
      .map((rev) => (
       <div key={rev._id} className="card bg-base-100 shadow-xl">
        <div className="card-body text-primary">
