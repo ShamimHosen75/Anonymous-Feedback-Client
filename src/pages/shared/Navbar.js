@@ -68,9 +68,9 @@ const Navbar = () => {
       )}
      </ul>
     </div>
-    <a href="https://appcoderz.com/" target="_blank" rel="noreferrer" className="btn btn-ghost normal-case text-2xl font-bold px-0">
-     App Coderz
-    </a>
+     <Link to="/home" className="btn btn-ghost normal-case text-2xl font-bold px-0">
+      App Coderz
+     </Link>
    </div>
    <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal p-0 font-medium sm:ml-10">

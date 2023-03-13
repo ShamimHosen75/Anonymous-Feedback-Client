@@ -26,14 +26,14 @@ const Dashboard = () => {
      ) : (
       <>
        <li>
-        <Link to="/dashboard/user">All Users</Link>
+        <Link to="/dashboard/user" className="btn btn-primary text-secondary rounded-md hover:bg-black hover:text-white border-0">All Users</Link>
        </li>
       </>
      )}
      {admin && (
       <>
        <li>
-        <Link to="/dashboard/user">All Users</Link>
+        <Link to="/dashboard/user" className="btn btn-primary text-secondary rounded-md hover:bg-black hover:text-white border-0">All Users</Link>
        </li>
       </>
      )}
