@@ -68,7 +68,7 @@ const Navbar = () => {
       )}
      </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-2xl font-bold px-0">
+    <a href="https://appcoderz.com/" target="_blank" rel="noreferrer" className="btn btn-ghost normal-case text-2xl font-bold px-0">
      App Coderz
     </a>
    </div>
@@ -93,7 +93,7 @@ const Navbar = () => {
      </Link>
     )}
    </div>
-   <div className="navbar-end sm:hidden">
+   {/* <div className="navbar-end sm:hidden md:hidden">
     <label
      tabIndex="1"
      htmlFor="sidebar-open"
@@ -114,7 +114,7 @@ const Navbar = () => {
       />
      </svg>
     </label>
-   </div>
+   </div> */}
   </div>
  );
 };

@@ -15,7 +15,7 @@ const Footer = () => {
    <div className="container py-5">
     <div className="grid sm:grid-cols-12 gap-10 py-4">
      <div className="sm:col-start-1 sm:col-end-5 mb-4 mb-lg-0">
-      <h3 className="text-3xl font-semibold mb-4">App Coderz</h3>
+      <h3 href="https://appcoderz.com/" target="_blank" rel="noreferrer" className="text-3xl font-semibold mb-4">App Coderz</h3>
       <p className="font-italic text-[#bcbcb6] font-semibold">
       App Coderz is with it's user-friendly interface, we've seen
        responses to surveys and feedback improve drastically?
@@ -66,7 +66,7 @@ const Footer = () => {
    <div className="py-3">
     <div className="container text-center">
      <p className="mb-0 py-2 text-secondary font-semibold">
-      Copyright © {year} | App Coderz | All rights reserved.
+      Copyright © {year} |<a href="https://appcoderz.com/" target="_blank" rel="noreferrer"> App Coderz </a>| All rights reserved.
      </p>
     </div>
    </div>
