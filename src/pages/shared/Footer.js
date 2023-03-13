@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
  const year = new Date().getFullYear();
@@ -15,9 +16,9 @@ const Footer = () => {
    <div className="container py-5">
     <div className="grid sm:grid-cols-12 gap-10 py-4">
      <div className="sm:col-start-1 sm:col-end-5 mb-4 mb-lg-0">
-      <h3 href="https://appcoderz.com/" target="_blank" rel="noreferrer" className="text-3xl font-semibold mb-4">App Coderz</h3>
-      <p className="font-italic text-[#bcbcb6] font-semibold">
-      App Coderz is with it's user-friendly interface, we've seen
+      <a href="https://appcoderz.com/" target="_blank" rel="noreferrer" className="text-3xl font-semibold mb-4">App Coderz</a>
+      <p className="font-italic text-[#bcbcb6] font-semibold mt-4">
+       App Coderz is with it's user-friendly interface, we've seen
        responses to surveys and feedback improve drastically?
       </p>
      </div>
@@ -32,9 +33,10 @@ const Footer = () => {
      </div>
      <div className="sm:col-start-7 sm:col-end-9 mb-4 mb-lg-0">
       <h6 className="uppercase font-medium mb-4">Company</h6>
-      <ul className="list-unstyled mb-0 text-[#bcbcb6] font semibold">
-       <li className="mb-2 ">Login</li>
-       <li className="mb-2 ">Register</li>
+      <ul className="list-unstyled mb-0 text-[#bcbcb6] font-semibold">
+      <Link to="/login" className="mb-2">Login</Link>
+       <br/>
+      <Link to="/signUp" className="mb-2">Sign UP</Link>
        <li className="mb-2 ">Our Feedback</li>
        <li className="mb-2 ">Summary</li>
       </ul>
