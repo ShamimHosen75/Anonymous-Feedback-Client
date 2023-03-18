@@ -6,17 +6,22 @@ const Footer = () => {
 
  const [email, setEmail] = useState("");
 
+ const refresh = () => window.location.reload(true);
+
  const handleNewsLater = (e) => {
   e.preventDefault();
   setEmail("");
  };
+
 
  return (
   <footer className="bg-primary text-secondary text-center sm:text-left px-10 sm:px-20">
    <div className="container py-5">
     <div className="grid sm:grid-cols-12 gap-10 py-4">
      <div className="sm:col-start-1 sm:col-end-5 mb-4 mb-lg-0">
-      <a href="https://appcoderz.com/" target="_blank" rel="noreferrer" className="text-3xl font-semibold mb-4">App Coderz</a>
+     <Link onClick={refresh} to="/home" className="btn btn-ghost normal-case text-2xl font-bold px-0">
+      App Coderz
+     </Link>
       <p className="font-italic text-[#bcbcb6] font-semibold mt-4">
        App Coderz is with it's user-friendly interface, we've seen
        responses to surveys and feedback improve drastically?

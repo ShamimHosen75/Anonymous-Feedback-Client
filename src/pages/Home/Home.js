@@ -7,7 +7,6 @@ import Review from './Review';
 import UserFeedback from './UserFeedback';
 
 const Home = () => {
-    // const [isAuthenticated, setAuthenticated] = useState(false);
     return (
         <>
             <div className='px-4 sm:px-12'>
