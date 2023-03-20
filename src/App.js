@@ -20,15 +20,14 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} >
+        <Route path="home" element={<Home />} />
+        <Route path="dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} >
           {/* <Route path='user' element={<User></User>}></Route> */}
-          <Route path='user' element={<RequireAdmin><User></User> 
-            </RequireAdmin>}></Route>
+          <Route path='user' element={<RequireAdmin><User></User></RequireAdmin>}></Route>
         </Route>
         <Route path='addReview' element={<AddReview></AddReview>}></Route>
-        <Route path="/login" element={<Login />} />
-        <Route path="/signUp" element={<SignUp />} />
+        <Route path="login" element={<Login />} />
+        <Route path="signUp" element={<SignUp />} />
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <ToastContainer></ToastContainer>

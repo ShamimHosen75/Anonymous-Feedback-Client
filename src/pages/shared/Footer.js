@@ -6,7 +6,7 @@ const Footer = () => {
 
  const [email, setEmail] = useState("");
 
- const refresh = () => window.location.reload(true);
+//  const refresh = () => window.location.reload(true);
 
  const handleNewsLater = (e) => {
   e.preventDefault();
@@ -19,7 +19,7 @@ const Footer = () => {
    <div className="container py-5">
     <div className="grid sm:grid-cols-12 gap-10 py-4">
      <div className="sm:col-start-1 sm:col-end-5 mb-4 mb-lg-0">
-     <Link onClick={refresh} to="/home" className="btn btn-ghost normal-case text-2xl font-bold px-0">
+     <Link to="/home" className="btn btn-ghost normal-case text-2xl font-bold px-0">
       App Coderz
      </Link>
       <p className="font-italic text-[#bcbcb6] font-semibold mt-4">
