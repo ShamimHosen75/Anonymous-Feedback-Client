@@ -12,7 +12,7 @@ const Navbar = () => {
   localStorage.removeItem("accessToken");
  };
 
- const refresh = () => window.location.reload(true);
+//  const refresh = () => window.location.reload(true);
 
  const menuItem = (
   <>
@@ -70,7 +70,7 @@ const Navbar = () => {
       )}
      </ul>
     </div>
-     <Link to="/home" onClick={refresh} className="btn btn-ghost normal-case text-2xl font-bold px-0">
+     <Link to="/home"  className="btn btn-ghost normal-case text-2xl font-bold px-0">
       App Coderz
      </Link>
    </div>

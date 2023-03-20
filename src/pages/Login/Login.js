@@ -17,7 +17,7 @@ const Login = () => {
   register,
   getValues,
   formState: { errors },
-  handleSubmit,
+  handleSubmit
  } = useForm();
  const [signInWithGoogle, googleUser, googleLoading, googleError] =
   useSignInWithGoogle(auth);
@@ -33,9 +33,13 @@ const Login = () => {
 
  useEffect(() => {
   if (token) {
-   navigate(from, { replace: true });
+     navigate(from, { replace: true });
   }
- }, [from, navigate, token]);
+ }, [token,from,navigate]);
+
+ if (googleLoading || loading) {
+    return <Loading loadingStatus="true"></Loading>;
+   }
 
  if (googleError || error) {
   errorElement = <p className="w-60 text-red-500">{error.message || googleError.message}</p>
@@ -44,10 +48,6 @@ const Login = () => {
  const onSubmit = (data) => {
   signInWithEmailAndPassword(data.email, data.password);
  };
-
- if (googleLoading || loading) {
-  return <Loading loadingStatus="true"></Loading>;
- }
 
  return (
   <>

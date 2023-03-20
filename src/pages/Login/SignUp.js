@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
-    useCreateUserWithEmailAndPassword,
-    useSignInWithGoogle,
-    useUpdateProfile
+  useCreateUserWithEmailAndPassword,
+  useSignInWithGoogle,
+  useUpdateProfile
 } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
@@ -16,22 +16,29 @@ const SignUp = () => {
  const {
   register,
   formState: { errors },
-  handleSubmit,
+  handleSubmit
  } = useForm();
  const [signInWithGoogle, googleUser, googleLoading, googleError] =
   useSignInWithGoogle(auth);
  const [createUserWithEmailAndPassword, user, loading, error] =
   useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
  const [updateProfile, updating, updateError] = useUpdateProfile(auth);
- let errorElement;
+ 
  const [token] = useToken(user || googleUser);
  const navigate = useNavigate();
 
- useEffect(() => {
-  if (token) {
-     navigate("/home");
-  }
- }, [navigate, token]);
+//  useEffect(() => {
+//   if (token) {
+//      navigate("/home");
+//   }
+//  }, [navigate, token]);
+
+ 
+ let errorElement;
+
+ if (googleLoading || loading || updating) {
+  return <Loading loadingStatus="true"></Loading>;
+ }
 
  if (googleError || error || updateError) {
   errorElement = <p className="w-60 text-red-500">
@@ -39,9 +46,9 @@ const SignUp = () => {
    </p>
  }
 
- if (googleLoading || loading || updating) {
-  return <Loading loadingStatus="true"></Loading>;
- }
+ if (token) {
+  navigate("/home");
+}
 
  const onSubmit = async (data) => {
   await createUserWithEmailAndPassword(data.email, data.password);

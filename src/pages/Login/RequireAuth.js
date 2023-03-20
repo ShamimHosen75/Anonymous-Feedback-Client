@@ -11,7 +11,8 @@ function RequireAuth({ children }) {
     let location = useLocation();
 
     if (loading) {
-        return <Loading loadingStatus="true"></Loading>
+        // return <Loading loadingStatus="true"></Loading>
+        return <Loading></Loading>
     }
   
     if (!user) {
@@ -19,6 +20,6 @@ function RequireAuth({ children }) {
     }
   
     return children;
-}
+};
 
 export default RequireAuth;
