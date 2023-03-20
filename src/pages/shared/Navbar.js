@@ -70,7 +70,7 @@ const Navbar = () => {
       )}
      </ul>
     </div>
-     <Link to="https://anonymous-feedback-288d2.web.app" className="btn btn-ghost normal-case text-2xl font-bold px-0">
+     <Link to="https://anonymous-feedback-288d2.web.app"className="btn btn-ghost normal-case text-2xl font-bold px-0">
       App Coderz
      </Link>
    </div>
