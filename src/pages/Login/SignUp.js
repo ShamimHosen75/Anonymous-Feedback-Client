@@ -178,7 +178,7 @@ const SignUp = () => {
         <p className="label-text-alt text-center mt-3">
          Already have an account?{" "}
          <Link
-          to="/login"
+          to="/adminLogin"
           className="label-text-alt link link-hover text-blue-500"
          >
           Please Login

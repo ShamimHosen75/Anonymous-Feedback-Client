@@ -64,8 +64,8 @@ const Navbar = () => {
         Sign Out
        </button>
       ) : (
-       <Link to="/login" className="btn btn-primary text-white border-0">
-        Login
+       <Link to="/adminLogin" className="btn btn-primary text-white border-0">
+        {/* Login */}
        </Link>
       )}
      </ul>
@@ -89,9 +89,8 @@ const Navbar = () => {
       Sign Out
      </button>
     ) : (
-     <Link to="/login" className="btn btn-secondary text-primary 
-     hover:bg-black hover:text-white border-0">
-      Login
+     <Link to="/adminLogin">
+      {/* Login */}
      </Link>
     )}
    </div>
