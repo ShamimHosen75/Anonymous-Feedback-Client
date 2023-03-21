@@ -23,7 +23,7 @@ const Users = () => {
   }, [userDeleteCount, adminCreate]);
  
   const handleUserDelete = (email) => {
-   fetch(`https://anonymous-feedback-system.vercel.app/user${email}`, {
+   fetch(`https://anonymous-feedback-system.vercel.app/user/${email}`, {
     method: "DELETE",
    })
     .then((res) => res.json())
