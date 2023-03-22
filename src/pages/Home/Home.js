@@ -13,6 +13,7 @@ const Home = () => {
                 <Banner></Banner>
                 <UserFeedback></UserFeedback>
                 <PinFormModal></PinFormModal>
+                {/* <AllFeedback></AllFeedback> */}
                 <RequireAdmin><Review></Review></RequireAdmin>
             </div>
             <Footer></Footer>

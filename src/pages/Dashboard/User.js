@@ -25,6 +25,10 @@ const Users = () => {
   const handleUserDelete = (email) => {
    fetch(`https://anonymous-feedback-system.vercel.app/user/${email}`, {
     method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+      authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+     },
    })
     .then((res) => res.json())
     .then((data) => {
