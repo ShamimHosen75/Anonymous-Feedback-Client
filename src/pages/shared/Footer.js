@@ -32,15 +32,11 @@ const Footer = () => {
       <ul className="list-unstyled mb-0 text-[#bcbcb6] font-semibold">
        <li className="mb-2  ">Our Achievement</li>
        <li className="mb-2 ">Our Story</li>
-       <li className="mb-2 ">Feedback</li>
-       <li className="mb-2 ">Our Blog</li>
       </ul>
      </div>
      <div className="sm:col-start-7 sm:col-end-9 mb-4 mb-lg-0">
       <h6 className="uppercase font-medium mb-4">Company</h6>
       <ul className="list-unstyled mb-0 text-[#bcbcb6] font-semibold">
-       <li className="mb-2 ">Login</li>
-       <li className="mb-2 ">Sign UP</li>
        <li className="mb-2 ">Our Feedback</li>
        <li className="mb-2 ">Summary</li>
       </ul>
