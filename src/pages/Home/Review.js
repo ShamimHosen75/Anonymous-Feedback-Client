@@ -34,8 +34,8 @@ const Review = () => {
           <h5 className="text-xl text-bold">{rev.name}</h5>
           <p>{rev.Address}</p>
          </div> */}
-         <p className="inline text-md font-semibold text-black">
-          <span className="text-xl font-bold">Feedback : </span>  
+         <p className="inline text-md font-semibold text-[#474747]">
+          <span className="text-xl text-[#373737] font-bold">Feedback : </span>  
           {rev.feedback?.slice(0, 200)}</p>
         </div>
         
