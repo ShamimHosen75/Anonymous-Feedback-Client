@@ -7,6 +7,7 @@ import useAdmin from "../Hooks/useAdmin";
 const Dashboard = () => {
  const [user] = useAuthState(auth);
  const [admin] = useAdmin(user);
+ 
 
  return (
   <div className="drawer drawer-mobile">
@@ -28,13 +29,19 @@ const Dashboard = () => {
        <li>
         <Link to="/dashboard/user" className="btn btn-primary text-secondary rounded-md hover:bg-black hover:text-white border-0">All Users</Link>
        </li>
+       
       </>
+      
      )}
      {admin && (
       <>
-       <li>
-        <Link to="/dashboard/user" className="btn btn-primary text-secondary rounded-md hover:bg-black hover:text-white border-0">All Users</Link>
+      <li>
+        <Link to="/dashboard/feedback" className="btn btn-primary text-secondary rounded-md hover:bg-black hover:text-white border-0">All Feedback</Link>
        </li>
+      <li>
+        <Link to="/dashboard/user" className="btn btn-primary mt-5 text-secondary rounded-md hover:bg-black hover:text-white border-0">All Users</Link>
+      </li>
+       
       </>
      )}
     </ul>

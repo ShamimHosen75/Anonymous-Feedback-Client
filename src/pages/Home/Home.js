@@ -1,9 +1,7 @@
 import React from 'react';
-import RequireAdmin from '../Login/RequireAdmin';
 import Footer from "../shared/Footer";
 import Banner from './Banner';
 import PinFormModal from './PinFormModal';
-import Review from './Review';
 import UserFeedback from './UserFeedback';
 
 const Home = () => {
@@ -14,7 +12,7 @@ const Home = () => {
                 <UserFeedback></UserFeedback>
                 <PinFormModal></PinFormModal>
                 {/* <AllFeedback></AllFeedback> */}
-                <RequireAdmin><Review></Review></RequireAdmin>
+                {/* <RequireAdmin><Review></Review></RequireAdmin> */}
             </div>
             <Footer></Footer>
         </>

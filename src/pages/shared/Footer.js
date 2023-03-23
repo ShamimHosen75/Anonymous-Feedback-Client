@@ -39,9 +39,8 @@ const Footer = () => {
      <div className="sm:col-start-7 sm:col-end-9 mb-4 mb-lg-0">
       <h6 className="uppercase font-medium mb-4">Company</h6>
       <ul className="list-unstyled mb-0 text-[#bcbcb6] font-semibold">
-      <Link to="/login" className="mb-2">Login</Link>
-       <br/>
-      <Link to="/signUp" className="mb-2">Sign UP</Link>
+       <li className="mb-2 ">Login</li>
+       <li className="mb-2 ">Sign UP</li>
        <li className="mb-2 ">Our Feedback</li>
        <li className="mb-2 ">Summary</li>
       </ul>

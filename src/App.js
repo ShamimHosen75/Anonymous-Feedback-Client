@@ -6,6 +6,7 @@ import AddReview from './pages/Dashboard/AddReview';
 import Dashboard from './pages/Dashboard/Dashboard';
 import User from './pages/Dashboard/User';
 import Home from './pages/Home/Home';
+import Review from './pages/Home/Review';
 import Login from './pages/Login/Login';
 import RequireAdmin from './pages/Login/RequireAdmin';
 import RequireAuth from './pages/Login/RequireAuth';
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="home" element={<Home />} />
         <Route path="dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} >
+          <Route path='feedback' element={<RequireAdmin><Review></Review></RequireAdmin>}></Route>
           <Route path='user' element={<User></User>}></Route>
           <Route path='user' element={<RequireAdmin><User></User></RequireAdmin>}></Route>
         </Route>
